@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .chat-left{
+        @apply text-xs font-semibold text-moderateViolet rounded-md;
+    }
+    .left-con{
+       @apply bg-gray-200 p-2 w-[60%] rounded-md;
+    }
+    .chat-grad{
+        @apply w-[80%] bg-gradient-to-r from-bgPink to-bgViolet rounded-md p-2 flex justify-between;
+    }
+    .chat-white{
+        @apply  bg-white text-darkViolet p-2 ml-auto text-xs rounded-md;
+    }
+    .absolute-left{
+        @apply absolute top-0 -left-44 h-[80vh] w-[40vw] rounded-b-full z-10 bg-gradient-to-bl from-bgPink to-bgViolet max-lg:w-[70vw];
+    }
+    .absolute-right{
+        @apply absolute bottom-[-42vh] -right-64 h-[115vh] w-[40vw] rounded-t-full z-10 bg-pink-50 max-lg:w-[70vw];
+    }
+}
